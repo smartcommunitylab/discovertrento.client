@@ -18,6 +18,9 @@ package eu.trentorise.smartcampus.dt.model;
 import java.io.Serializable;
 
 
+/**
+ * Step in a {@link StoryObject}
+ */
 public class StepObject implements Serializable {
 
 	private static final long serialVersionUID = 8517257945277793403L;

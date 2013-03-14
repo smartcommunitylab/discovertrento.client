@@ -35,7 +35,14 @@ public class GenericPOI implements java.io.Serializable {
 	 */
 	private String description;
 
+	/**
+	 * Source
+	 */
 	private String source;
+	
+	/**
+	 * Type
+	 */
 	private String type;
 	
 	/**

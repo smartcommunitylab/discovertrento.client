@@ -23,9 +23,24 @@ import eu.trentorise.smartcampus.common.Concept;
 public class CommunityData implements Serializable{ 
 	private static final long serialVersionUID = 5926048335916274968L;
 
+	/**
+	 * Tags
+	 */
 	private List<Concept> tags;
+	
+	/**
+	 * Notes
+	 */
 	private String notes;
+	
+	/**
+	 * Average rating
+	 */
 	private int averageRating;
+	
+	/**
+	 * List of ratings
+	 */
 	private List<Rating> ratings;
 	
 	public CommunityData() {

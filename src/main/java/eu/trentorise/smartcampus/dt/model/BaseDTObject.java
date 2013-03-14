@@ -57,6 +57,9 @@ public class BaseDTObject  {
 	private String creatorName = null;
 
 	// community data
+	/**
+	 * Community data of the object
+	 */
 	private CommunityData communityData = null;
 	
 	// categorization
@@ -65,11 +68,6 @@ public class BaseDTObject  {
 	 */
 	private String type = null;
 	
-	/**
-	 * Is the object user defined?
-	 */
-	private boolean typeUserDefined = false; // category set by users
-
 	// common data
 	
 	/**
@@ -87,7 +85,9 @@ public class BaseDTObject  {
 	 */
 	private Long toTime;
 	
-	
+	/**
+	 * Time schedule information for the object (if any)
+	 */
 	private String timing;
 
 	/**
@@ -203,14 +203,6 @@ public class BaseDTObject  {
 
 	public void setEntityId(Long entityId) {
 		this.entityId = entityId;
-	}
-
-	public boolean isTypeUserDefined() {
-		return typeUserDefined;
-	}
-
-	public void setTypeUserDefined(boolean typeUserDefined) {
-		this.typeUserDefined = typeUserDefined;
 	}
 
 	public CommunityData getCommunityData() {

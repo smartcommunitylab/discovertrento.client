@@ -19,6 +19,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * A story composed by a sequence of steps
+ */
 public class StoryObject extends BaseDTObject {
 
 	private static final long serialVersionUID = -5123355788738143639L;
@@ -28,7 +31,14 @@ public class StoryObject extends BaseDTObject {
 	 */
 	private List<StepObject> steps = new ArrayList<StepObject>();
 	
+	/**
+	 * List containing the user id if attending, empty otherwise
+	 */	
 	private List<String> attending = new ArrayList<String>();
+	
+	/**
+	 * Number of attendees
+	 */	
 	private Integer attendees = 0;
 	
 	

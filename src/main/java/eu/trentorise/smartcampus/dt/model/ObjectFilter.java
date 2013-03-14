@@ -25,12 +25,12 @@ public class ObjectFilter {
 	private boolean myObjects;
 	
 	/**
-	 * Latitude and longitude of circel center
+	 * Latitude and longitude of circle center
 	 */
 	private double[] center;
 	
 	/**
-	 * Circle radius
+	 * Circle radius (for the magnitude order of this value, consider the distance between two points given their latitude and longitude)
 	 */
 	private Double radius;
 	

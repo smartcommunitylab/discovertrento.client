@@ -21,14 +21,19 @@ import java.util.List;
 
 public class EventObject extends BaseDTObject {
 
+	/**
+	 * Id of POI
+	 */
 	private String poiId;
 
-	boolean fromTimeUserDefined = false;
-	boolean toTimeUserDefined = false;
-	boolean poiIdUserDefined = false;
-	
-	
+	/**
+	 * List containing the user id if attending, empty otherwise
+	 */
 	private List<String> attending = new ArrayList<String>();
+	
+	/**
+	 * Number of attendees
+	 */
 	private Integer attendees = 0;
 	
 	public EventObject() {
@@ -59,30 +64,6 @@ public class EventObject extends BaseDTObject {
 		this.attendees = attendees;
 	}
 
-	public boolean isFromTimeUserDefined() {
-		return fromTimeUserDefined;
-	}
-
-	public void setFromTimeUserDefined(boolean fromTimeUserDefined) {
-		this.fromTimeUserDefined = fromTimeUserDefined;
-	}
-
-	public boolean isToTimeUserDefined() {
-		return toTimeUserDefined;
-	}
-
-	public void setToTimeUserDefined(boolean toTimeUserDefined) {
-		this.toTimeUserDefined = toTimeUserDefined;
-	}
-
-	public boolean isPoiIdUserDefined() {
-		return poiIdUserDefined;
-	}
-
-	public void setPoiIdUserDefined(boolean poiIdUserDefined) {
-		this.poiIdUserDefined = poiIdUserDefined;
-	}
-	
 	public static void filterUserData(EventObject event, String userId) {
 		List<String> attending = event.getAttending();
 		if (attending == null || attending.isEmpty()) return;

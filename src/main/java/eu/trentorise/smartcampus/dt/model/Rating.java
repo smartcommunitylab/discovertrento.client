@@ -17,10 +17,20 @@ package eu.trentorise.smartcampus.dt.model;
 
 import java.io.Serializable;
 
+/**
+ * Rating for objects managed by the service
+ */
 public class Rating implements Serializable {
 	private static final long serialVersionUID = 8439956580747593928L;
 
+	/**
+	 * Id of the user
+	 */
 	private String userId;
+	
+	/**
+	 * Value
+	 */
 	private int value;
 	
 	public Rating() {
