@@ -16,7 +16,7 @@ import eu.trentorise.smartcampus.dt.model.POIObject;
 import eu.trentorise.smartcampus.dt.model.StoryObject;
 
 /**
- * Class used to connect with the profile service.
+ * Class used to connect with the discover trento service.
  * 
  */
 public class DiscoverTrentoConnector {
