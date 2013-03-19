@@ -50,14 +50,6 @@
 			<type>jar</type>
 		</dependency>
 
-		<dependency>
-			<groupId>eu.trentorise.smartcampus</groupId>
-			<artifactId>smartcampus.vas.commons</artifactId>
-			<version>1.0</version>
-			<type>jar</type>
-		</dependency>
-
-
 	</dependencies>
 
 	<build>
