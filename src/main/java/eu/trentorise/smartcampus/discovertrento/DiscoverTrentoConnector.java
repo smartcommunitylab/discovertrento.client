@@ -20,11 +20,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
-import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jackson.map.DeserializationConfig.Feature;
+import org.codehaus.jackson.map.ObjectMapper;
 
 import eu.trentorise.smartcampus.discovertrento.util.HTTPConnector;
-import eu.trentorise.smartcampus.discovertrento.util.HttpMethod;
 import eu.trentorise.smartcampus.dt.model.EventObject;
 import eu.trentorise.smartcampus.dt.model.ObjectFilter;
 import eu.trentorise.smartcampus.dt.model.POIObject;
