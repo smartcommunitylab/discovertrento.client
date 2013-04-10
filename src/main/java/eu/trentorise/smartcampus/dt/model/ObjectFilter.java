@@ -16,50 +16,27 @@
 package eu.trentorise.smartcampus.dt.model;
 
 import java.util.Map;
+import java.util.SortedMap;
 
 public class ObjectFilter {
 
-	/**
-	 * Only my objects?
-	 */
 	private boolean myObjects;
-	
-	/**
-	 * Latitude and longitude of circle center
-	 */
 	private double[] center;
-	
-	/**
-	 * Circle radius (for the magnitude order of this value, consider the distance between two points given their latitude and longitude)
-	 */
 	private Double radius;
-	
-	/**
-	 * Type
-	 */
 	private String type;
-	
-	/**
-	 * From time
-	 */
 	private Long fromTime;
-	
-	/**
-	 * To time
-	 */
 	private Long toTime;
 	
 	private Integer limit;
 	private Integer skip;
 	
-	private String domainType;
+	private String text;
 	
-	/**
-	 * Class name of the object
-	 */
+	private String domainType;
 	private String className;
 
 	private Map<String,Object> criteria = null;
+	private SortedMap<String,Integer> sort = null;
 
 	public ObjectFilter() {
 		super();
@@ -152,4 +129,28 @@ public class ObjectFilter {
 	public void setClassName(String className) {
 		this.className = className;
 	}
+
+	/**
+	 * @return the sort
+	 */
+	public SortedMap<String, Integer> getSort() {
+		return sort;
+	}
+
+	/**
+	 * @param sort the sort to set
+	 */
+	public void setSort(SortedMap<String, Integer> sort) {
+		this.sort = sort;
+	}
+
+	public String getText() {
+		return text;
+	}
+
+	public void setText(String text) {
+		this.text = text;
+	}
+	
+	
 }
