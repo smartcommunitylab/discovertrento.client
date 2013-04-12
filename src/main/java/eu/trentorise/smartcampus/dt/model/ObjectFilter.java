@@ -15,6 +15,7 @@
  ******************************************************************************/
 package eu.trentorise.smartcampus.dt.model;
 
+import java.util.List;
 import java.util.Map;
 import java.util.SortedMap;
 
@@ -23,7 +24,7 @@ public class ObjectFilter {
 	private boolean myObjects;
 	private double[] center;
 	private Double radius;
-	private String type;
+	private List<String> types;
 	private Long fromTime;
 	private Long toTime;
 	
@@ -58,12 +59,12 @@ public class ObjectFilter {
 		this.radius = radius;
 	}
 
-	public String getType() {
-		return type;
+	public List<String> getTypes() {
+		return types;
 	}
 
-	public void setType(String type) {
-		this.type = type;
+	public void setTypes(List<String> types) {
+		this.types = types;
 	}
 
 	public Long getFromTime() {
